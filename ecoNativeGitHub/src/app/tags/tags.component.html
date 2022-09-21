@@ -1,0 +1,5 @@
+<div class="row"*ngIf="tags">
+<a class="card" *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}" style="width:fit-content;">
+    {{tag.name}} ({{tag.count}})
+</a>
+</div>

@@ -1,0 +1,32 @@
+.row{
+    margin-top: 10px;
+    margin-left: 0.5px
+}
+button{
+    margin-top: 10px;
+    background-color: #b5bd90;
+  border: none;
+}
+.button:hover { background-color: #b5bd90 }
+label{
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.container{
+    border: 1px solid #b5bd90;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    padding-right: -200rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.button{
+    margin-top: 10px;
+    background-color: #b5bd90;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}

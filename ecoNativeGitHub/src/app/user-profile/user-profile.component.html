@@ -1,0 +1,56 @@
+
+<div class="container">
+    <div class="details">
+        <h3>User Profile</h3>
+        <form [formGroup]="userProfileForm" (ngSubmit)="submit()">
+            <div class="input-container">
+                <div><label>Name</label></div>
+                
+                <input size="50" type="text" placeholder="Name" formControlName="name">
+            </div>
+            <div  class="error-list" *ngIf="fc.name.errors && isSubmitted">
+                <div *ngIf="fc.name.errors.required">Should not be empty</div>
+                
+
+            </div>
+            <div class="input-container">
+                <div><label>Email</label></div>
+                <input size="50" type="text" placeholder="Email" formControlName="email">
+            </div>
+            <div class="error-list" *ngIf="fc.email.errors && isSubmitted">
+                <div *ngIf="fc.email.errors.required">Should not be empty</div>
+                <div *ngIf="fc.email.errors.email">Email is not correct</div>
+
+            </div>
+            <div class="input-container">
+                <div><label>Password</label></div>
+                
+                <input size="50" type="text" placeholder="Password" formControlName="password" minlength="5">
+            </div>
+            <div  class="error-list" *ngIf="fc.password.errors && isSubmitted">
+                <div *ngIf="fc.password.errors.required">Should not be empty</div>
+                <div *ngIf="fc.password.errors.minlength">Should contain at least 5 characters</div>
+
+            </div>
+            <div class="input-container">
+                <div><label>Address</label></div>
+                
+                <input size="50" type="text" placeholder="Address" formControlName="address" minlength="10">
+            </div>
+            <div  class="error-list" *ngIf="fc.address.errors && isSubmitted">
+                <div *ngIf="fc.address.errors.required">Should not be empty</div>
+                <div *ngIf="fc.address.errors.minlength">Should contain at least 10 characters</div>
+            
+                
+
+            </div>
+            <br>
+<div class="button"></div>
+<button type="submit" style="width: 70%;">Update Details</button>
+
+        </form>
+        <button (click)="submit1()"style="width: 70%;">Delete Account</button>
+    </div>
+    
+
+</div>

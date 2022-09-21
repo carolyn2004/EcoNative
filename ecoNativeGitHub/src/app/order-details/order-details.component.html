@@ -1,0 +1,50 @@
+<div>
+    <div class="row">
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+            <div class="container">
+                <div >
+                    
+                    <h3>Order Details</h3>
+           <p>This page helps to keep track of users order details.</p>
+                        <p >Users can add multiple addresses but should indicate which address they would like their latest order delivered to.</p>
+                    <div class="col-sm-12">
+                        <div><label>Name</label></div>
+                            <input class="row" size="50" readonly formControlName="user" id="user" placeholder="User" value="user">
+                            <div><label>Address</label></div>
+                            <input class="row" size="50" formControlName="address" id="address" placeholder="Address">
+                            <div><label>Email</label></div>
+                            <input class="row" size="50" formControlName="email" id="email" placeholder="Email">
+                            <div><label>Comments</label></div>
+                            <input class="row" size="50" formControlName="comments" id="comments" placeholder="Comments">
+                            <button class="row"class="button" type="submit">Submit</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container"*ngFor="let orderDetails of orderDetails">
+        <div>
+        <h4>{{orderDetails.user}}</h4>
+        <p><b>Address: </b>{{orderDetails.address}}</p>
+        <p><b>Email: </b>{{orderDetails.email}}</p>
+        <p><b>Comments: </b>{{orderDetails.comments}}</p>
+        <div><label>Name</label></div>
+        <input type="text" size="50" readonly class="row" value={{orderDetails.user}}
+        id={{orderDetails._id}}_user>
+        <div><label>Address</label></div>
+        <input  type="text" size="50" class="row" value={{orderDetails.address}}
+        id={{orderDetails._id}}_address>
+        <div><label>Email</label></div>
+        <input type="text" size="50" class="row" value={{orderDetails.email}}
+        id={{orderDetails._id}}_email>
+        <div><label>Comments</label></div>
+        <input type="text" size="50" class="row" value={{orderDetails.comments}}
+        id={{orderDetails._id}}_comments>
+        <button  class="button" href="javascript:void(0)" (click)="deleteOrderDetails(orderDetails._id)"
+        >Delete</button> <br>
+        <button class="button" href="javascript:void(0)" (click)="updateOrderDetails(orderDetails._id)" 
+        >Update</button>
+        </div>
+        </div>
+</div>

@@ -1,0 +1,44 @@
+
+<div class="container">
+  <div class="details">
+      <h3>Add a Product</h3>
+      <form [formGroup]="addProductForm" (ngSubmit)="submit()">
+          <div class="input-container">
+              <div><label>Product Name</label></div>
+              <input size="50" type="text" placeholder="Product Name" formControlName="pname">
+          </div>
+          <div class="error-list" *ngIf="fc.pname.errors && isSubmitted">
+              <div *ngIf="fc.pname.errors.required">Should not be empty</div>
+              
+          </div>
+          <div class="input-container">
+              <div><label>Unit Price</label></div>
+              
+              <input size="50" type="text" placeholder="Unit Price" formControlName="price">
+          </div>
+          <div  class="error-list" *ngIf="fc.price.errors && isSubmitted">
+              <div *ngIf="fc.price.errors.required">Should not be empty</div>
+              
+
+          </div>
+          <div class="input-container">
+            <div><label>Description</label></div>
+            
+            <input size="50" type="text" placeholder="Description" formControlName="description" minlength="20">
+        </div>
+        <div  class="error-list" *ngIf="fc.description.errors && isSubmitted">
+            <div *ngIf="fc.description.errors.required">Should not be empty</div>
+            <div *ngIf="fc.description.errors.minlength">Should contain at least 20 characters</div>
+            
+
+        </div>
+          <br>
+          <p>Choose a Display Image</p>
+          <input type="file"><br><br>
+<button type="submit">Add Product</button>
+      </form>
+      
+  </div>
+  
+
+</div>

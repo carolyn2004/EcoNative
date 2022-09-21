@@ -1,0 +1,41 @@
+<div class="container">
+  <td >
+   <h3 style="color:#4E6151; margin-left: -30px; margin-top: -1rem; ">Order Items</h3>
+    </td>
+<table style="margin-left: -30px; margin-top: -1rem;">
+    
+    <tr *ngFor="let item of order.items">
+      <td>
+        <a routerLink="/products/{{item.products.id}}">
+          <img [src]="item.products.image"/>
+        </a>
+      </td>
+      <td>
+        {{item.products.name}}
+      </td>
+     
+      <td>
+        {{item.products.price | currency}}
+      </td>
+      <td>
+       <strong style="padding-left: 10px;">x</strong> {{item.quantity}}
+      </td>
+      <td>
+        {{item.price | currency}}
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td>
+        <strong>
+          Total :
+        </strong>
+      </td>
+      <td>
+        <strong>
+          {{order.totalPrice | currency}}
+        </strong>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+    <h2 style="margin-left: -1rem;">Order Summary</h2>
+ <div class="order-items">
+    <app-order-items-list [order]="order"></app-order-items-list>
+    
+     <p> <strong>Name: </strong>{{order.name}}</p>
+    <p><strong>Email: </strong> {{order.email}}</p>
+    <p><strong>Address: </strong> {{order.address}}</p>
+    <button  (click)="clearCart()" >Confirm Order</button>
+</div>
+</div>

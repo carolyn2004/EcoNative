@@ -1,0 +1,33 @@
+.image{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 1.5rem;
+   width: 65%;
+ }
+ /* Next & previous buttons */
+ .prev,
+ .next {
+   cursor: pointer;
+   position:absolute;
+   top: 40%;
+   width: auto;
+   padding: 20px;
+   margin-top: -50px;
+   margin: 5%;
+   color: gray;
+   font-weight: bold;
+   font-size: 20px;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+   -webkit-user-select: none;
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   right:0;
+   left: 1;
+   margin-right: 285px;
+   border-radius: 3px 0 0 1px;
+ }
+ 

@@ -1,0 +1,32 @@
+.column{
+    float: left;
+    margin-bottom: 5px;  
+    margin-top: 10px;  
+    width:26%;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    
+
+}
+.product-card{
+    margin-left: 115px;
+    
+}
+.card-title{
+    font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif
+}
+.card{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+img:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+.tags{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+

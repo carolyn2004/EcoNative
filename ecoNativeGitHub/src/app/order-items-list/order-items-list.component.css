@@ -1,0 +1,30 @@
+table{
+    width: 110%;
+    border: 1px solid white;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding: 5rem;
+    margin-left: -1rem;
+    
+  }
+  
+  h3{
+    margin-top: 0.5rem;
+    margin-left: 0.3rem;
+    color: grey;
+  }
+  
+  a:hover{
+    opacity: 0.9;
+  }
+  
+  td{
+    height: 4rem;
+
+  }
+  
+  td img{
+    width: 5rem;
+    height: 3.5rem;
+  
+  }

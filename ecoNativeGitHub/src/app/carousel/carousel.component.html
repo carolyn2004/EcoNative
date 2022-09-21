@@ -1,0 +1,13 @@
+
+<div id="carouselExampleControls" class="carousel-slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <img class="image" src="{{ slides[slideIndex] }}" alt="slide" />
+    </div>
+  
+    <button class="prev"(click)="changeSlide(-1)" [disabled]="slideIndex === 0">Prev</button>
+  
+    <button class="next"(click)="changeSlide(1)" [disabled]="slideIndex === slides.length-1">
+      Next
+    </button>
+  </div>
+  

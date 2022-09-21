@@ -1,0 +1,34 @@
+
+<div class="container">
+    <div class="details">
+        <h3>Login</h3>
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+            <div class="input-container">
+                <div><label>Name</label></div>
+                
+                <input size="50" type="name" placeholder="name" formControlName="name">
+            </div>
+            <div  class="error-list" *ngIf="fc.name.errors && isSubmitted">
+                <div *ngIf="fc.name.errors.required">Should not be empty</div>
+                
+
+            </div>
+            <div class="input-container">
+                <div><label>Password</label></div>
+                
+                <input size="50" type="password" placeholder="Password" formControlName="password">
+            </div>
+            <div  class="error-list" *ngIf="fc.password.errors && isSubmitted">
+                <div *ngIf="fc.password.errors.required">Should not be empty</div>
+                
+
+            </div>
+            <br>
+<div class="button"></div>
+<button type="submit">Login</button>
+        </form>
+        <a class="user" routerLink="/sign-up">New user? Register here</a>
+    </div>
+    
+
+</div>

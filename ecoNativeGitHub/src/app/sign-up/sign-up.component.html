@@ -1,0 +1,65 @@
+
+<div class="container">
+    <div class="details">
+        <h3>Register</h3>
+        <form [formGroup]="registerForm" (ngSubmit)="submit()">
+            <div class="input-container">
+                <div><label>Name</label></div>
+                
+                <input size="50" type="text" placeholder="Username" formControlName="username">
+            </div>
+            <div  class="error-list" *ngIf="fc.username.errors && isSubmitted">
+                <div *ngIf="fc.username.errors.required">Should not be empty</div>
+                
+
+            </div>
+            <!-- <div class="input-container">
+                <div><label>Email</label></div>
+                <input size="50" type="text" placeholder="Email" formControlName="email">
+            </div>
+            <div class="error-list" *ngIf="fc.email.errors && isSubmitted">
+                <div *ngIf="fc.email.errors.required">Should not be empty</div>
+                <div *ngIf="fc.email.errors.email">Email is not correct</div>
+
+            </div> -->
+            <div class="input-container">
+                <div><label>Password</label></div>
+                
+                <input size="50" type="password" placeholder="Password" formControlName="password" minlength="5">
+            </div>
+            <div  class="error-list" *ngIf="fc.password.errors && isSubmitted">
+                <div *ngIf="fc.password.errors.required">Should not be empty</div>
+                <div *ngIf="fc.password.errors.minlength">Should contain at least 5 characters</div>
+
+            </div>
+            <div class="input-container">
+                <div><label>Role</label></div>
+                
+                <input size="50" type="text" placeholder="Role" formControlName="role">
+            </div>
+            <div  class="error-list" *ngIf="fc.role.errors && isSubmitted">
+                <div *ngIf="fc.role.errors.required">Should not be empty</div>
+                
+
+            </div>
+            <!-- <div class="input-container">
+                <div><label>Address</label></div>
+                
+                <input size="50" type="text" placeholder="Address" formControlName="address" minlength="10">
+            </div>
+            <div  class="error-list" *ngIf="fc.address.errors && isSubmitted">
+                <div *ngIf="fc.address.errors.required">Should not be empty</div>
+                <div *ngIf="fc.address.errors.minlength">Should contain at least 10 characters</div>
+            
+                
+
+            </div> -->
+            <br>
+<div class="button"></div>
+<button type="submit">Register</button>
+        </form>
+        <a class="user" routerLink="/login">Already have an account? Login Here</a>
+    </div>
+    
+
+</div>

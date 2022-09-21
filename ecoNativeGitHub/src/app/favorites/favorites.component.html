@@ -1,0 +1,36 @@
+<div class="container1" style="margin-left: 130px;">
+<div class="container">
+</div>
+<div class="row">
+<div class="col-sm3"*ngFor="let products of FavList" style="margin-bottom: 2rem; margin-left: 30px;"> 
+    <!-- <p>{{products._id}}</p> -->
+  <div class="card product-card" style="width: 18rem;">
+      <img class="card-img-top" src="{{products.image}}" alt="Card image cap" routerLink="/products/{{products.productId}}">
+      <div class="card-body">
+        <h5 class="card-title">{{products.name}}</h5>
+    
+        <!-- <p class="card card-category" style="background-color: #b5bd90; color:white; width: fit-content; padding: 5px; ">
+         </p> -->
+          <div>
+           <strong style="color: maroon ;"></strong> 
+        </div>
+
+        <div>
+            <button style="margin-left: 180px;" (click)="deleteFav(products._id)" class="remove-button">
+                Remove
+            </button>
+            <!-- <button (click)="">Add to Cart</button> -->
+        </div>
+        <div>
+          <!-- <button (click)="addToCart()" class="align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto; margin-left: 50px; margin-top: 1rem;"class="copy-button">
+             Copy item to cart
+          </button> -->
+        
+      </div>
+
+        <!-- <a href="#" class="btn btn-primary">More Info</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>

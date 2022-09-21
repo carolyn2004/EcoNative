@@ -1,0 +1,73 @@
+<div class="container">
+    <img style="margin-bottom: 7rem ;" [src]="image" [alt]="productsList.name">
+   
+     
+  
+    <div class="details">
+        <div class="header">
+            <span class="name">
+                {{name}}
+
+            </span>
+            <div class="card" style="width:fit-content; background-color: #b5bd90; color: #ffffff;" >
+                <span routerLink="/tag/{{productsList.tags}}">
+                    {{tags}} 
+                </span>
+                
+                
+            </div>
+          
+            
+            <div class="description">
+{{description}}
+            </div>
+            <div class="price" style="font-weight: 600 ; color: maroon">
+            ${{price}}
+            </div>
+            <button routerLink="/buy-product" (click)="addToCart()" >Purchase Item</button>
+            <button routerLink="/favorites" (click)="addToFav()" >Add to favorites</button>
+            <!-- <button >Add to Favorites</button> -->
+
+           
+            <div style="margin-left:-35.6rem; margin-top:5rem">
+                
+                    <!-- <button class="btn btn-default">IH Tabs</button> -->
+                    <ul class="tabs-container">
+                      <li  (click)="onTabClick('Delivery')" [class.active]="activeTab == 'Delivery'" class="tab-link" > Delivery</li>
+                      <li (click)="onTabClick('Free Returns')" [class.active]="activeTab == 'Free Returns'"  class="tab-link" >Free Returns</li>
+                    
+                    </ul>
+                    <div *ngIf="activeTab == 'Delivery'" style="margin-left: 10px;">
+                        <h6 style="margin-top: 1rem;">Free delivery</h6>
+                        <ul>
+                            <li>
+                                All registered user of our website get to enjoy free delivery!
+                            </li>
+                            <li>
+                                Register an account with Eco-native today!
+                            </li>
+                         
+                        </ul>
+                    </div>
+                    <div *ngIf="activeTab == 'Free Returns'" style="margin-left: 10px;">
+                        <h6 style="margin-top: 1rem;">Online</h6>
+                        
+                        
+                        <ul>
+                            <li>
+                                Returns of products purchased online can be made via post.
+                            </li>
+                            <li>
+                                Personalised products and special request items cannot be returned unless faulty.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <button style="margin-left: 60px;" routerLink="/tag/{{products.tags}}">
+                        Click to view similar products
+                    </button>
+                    <button style="margin-left: 60px;" routerLink="/update-product/{{products.id}}">
+                       Edit Product Details
+                    </button> -->
+                   
+                    
+            </div>

@@ -1,0 +1,23 @@
+<div class="container" style="margin-left: 180px;">
+<app-carousel></app-carousel>
+<!-- <app-search></app-search> -->
+<div class="tags">
+  <app-tags ></app-tags> 
+</div>
+<!-- <app-tags ></app-tags>  -->
+<!-- <app-not-found  [visible]="!products|| products.length <=0"resetLinkText="Reset Search" ></app-not-found> -->
+<!-- error lies here -->
+<!-- everything below disappears when inserting search component -->
+
+<div class="column"*ngFor="let products of productsList">
+  <div class="card product-card" style="width: 18rem;">
+    <img class="card-img-top" src="{{products.image}}" alt="Card image cap" routerLink="/products/{{products._id}}">
+    <div class="card-body">
+      <h5 class="card-title">{{products.name}}</h5>
+      <p class="card card-category" style="background-color: #b5bd90; color:white; width: fit-content; padding: 5px; ">
+        {{products.tags}}</p>
+      <!-- <a href="#" class="btn btn-primary">More Info</a> -->
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,23 @@
+.card{
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+button{
+background-color: #b5bd90;
+border: none;
+margin-top: 10px;
+background-color: #b5bd90;
+border: none;
+color: white;
+border-radius: 5px;
+padding: 10px;
+}
+h3{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+.price{
+    color: maroon;
+}
+button:hover { background-color: #b5bd90 }

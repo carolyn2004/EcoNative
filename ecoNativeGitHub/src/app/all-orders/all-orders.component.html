@@ -1,0 +1,10 @@
+<!-- <p>all-orders works!</p> -->
+  <div *ngFor="let orders of orderList" class="card" class="card w-75">
+    <div class="card-body">
+      <h5 class="card-title">{{orders.name}}</h5>
+      <p class="card-text">{{orders.description}}</p>
+      <p class="card-text" class="price">${{orders.price}}</p>
+      <p class="card-text" class="user"><b>Order placed by: </b>{{orders.user}}</p>
+
+    </div>
+  </div>

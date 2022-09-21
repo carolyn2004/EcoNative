@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Edit Product Details</h2>
+
+
+  <form [formGroup]="updateProductForm" (ngSubmit)="submit()">
+    <label for="pname">Product Name:</label><br>
+    <input type="text" id="price" name="pname" formControlName="pname"><br>
+    <!-- error lies here -->
+    <div class="error-list" *ngIf="fc.pname.errors && isSubmitted">
+      <div *ngIf="fc.pname.errors.required">Should not be empty</div>
+
+    </div>
+    <label for="price">Unit Price:</label><br>
+    <input type="text" id="price" name="price" formControlName="price"><br>
+    <!-- error lies here -->
+    <div class="error-list" *ngIf="fc.price.errors && isSubmitted">
+      <div *ngIf="fc.price.errors.required">Should not be empty</div>
+
+
+    </div>
+
+    <label for="description">Product Description:</label><br>
+    <textarea type="text" style="overflow: scroll; height: 200px; width: 500px;" formControlName="description"
+      id="description" name="description"> </textarea><br>
+    <div class="error-list" *ngIf="fc.description.errors && isSubmitted">
+      <div *ngIf="fc.description.errors.required">Should not be empty</div>
+
+
+    </div>
+    <label for="img">Change Display Image:</label><br>
+    <input type="file" id="img" name="img" accept="image/*"><br><br>
+    <button type="submit" style="width: 70%;">Update Product Details</button>
+    
+  </form>
+  <button (click)="submit1()"style="width: 70%;" >Delete Product</button>
+</div>

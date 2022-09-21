@@ -1,0 +1,24 @@
+button{
+    border-radius: 1rem;
+    border: none;
+    padding: .5rem;
+    color: white;
+    opacity: .7;
+    outline: none;
+    margin-left: 0px;
+    background-color: #4E6151;
+    width: 15rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}
+.container{
+    border: 1px solid #b5bd90;
+    border-radius: 1rem;
+    margin-left: 27rem;
+    margin-top: 1rem;
+    padding: 2rem;
+    padding-right: -200rem;
+    width: 60%;
+    margin-bottom: 2rem;
+}

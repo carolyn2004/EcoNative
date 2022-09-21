@@ -1,0 +1,14 @@
+.nav-link
+{
+    font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
+}
+.container{
+    max-width: 100%;
+    
+    /* background-color: aquamarine; */
+}
+nav{
+    margin-right: -1.7ch;
+    margin-left: -1.7ch;
+}
+
