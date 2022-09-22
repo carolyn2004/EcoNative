@@ -46,11 +46,23 @@
 # Login Page
 ![image](https://user-images.githubusercontent.com/100062535/191736400-9947e876-0579-444e-a606-847b53d30bcf.png)
 
-# Viewing and Cancellation of Orders
+# Viewing and Cancellation of Orders (normal users)
 ![image](https://user-images.githubusercontent.com/100062535/191736664-c7082ca0-5045-4c8f-88d0-db6e876e815e.png)
 
 # Favorites Page
 ![image](https://user-images.githubusercontent.com/100062535/191736857-f801e7a1-a20d-42e2-b12d-ef9da151dfc5.png)
+
+# Order Details Page
+![image](https://user-images.githubusercontent.com/100062535/191738373-29b88411-967f-4556-bb3e-ea35dd2897f9.png)
+
+# Viewing of All Placed Orders (admin users)
+![image](https://user-images.githubusercontent.com/100062535/191738632-88a95dcd-0be2-43d6-bec9-f06a1ef37a4c.png)
+
+# If not authorized to access certain pages there will be an alert
+![image](https://user-images.githubusercontent.com/100062535/191738949-f6937c01-03fd-4f11-bad0-7b0d64a2acd1.png)
+
+
+
 
 
 
