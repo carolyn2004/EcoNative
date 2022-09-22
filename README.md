@@ -2,6 +2,7 @@
 - Econative is an ecommerce website which sells sustainable products. 
 - By selling sustainable goods we can reduce our carbon emissions by selling products to customers and encouraging more people to use products that are made of recycled materials, sustainable materials or waste (purpose of website and problem econative aims to solve).
 - A dynamic web application developed using Mongo, Express, Angular framework, and Node.js.
+- Used libraries such as leaflet js. to display a map of the store's physical location. 
 - Web application was coded using VS code.
 - Website has header and footer with several useful links. This is a single-page application.
 - Images and banners are sourced online, I do not own any of the images. 
